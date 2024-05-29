@@ -81,29 +81,100 @@ nav a {
     width: 1080px;
     height: 600px;
 }
+
+/* Quick list section desing */
+.features-section {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-inline: 150px;
+    column-gap: 55px;
+}
+
+.features-section-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.features-section-img img {
+    height: 300px;
+    width: 300px;
+}
+
+.quick-list h1 {
+    font-size: 35px;
+    /* padding-bottom: 5px; */
+}
+
+.quick-color {
+    color: #727272;
+    font-weight: 500;
+}
+
+.features-color {
+    color: #FF900E;
+    font-weight: 700;
+}
+
+.quick-list p {
+    color: #727272;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 25px;
+
+}
+
 /* style for mobail device */
 @media screen and (max-width:576px) {
     nav {
         display: block;
-        /* width: 500px; */
+        margin-inline: 15px;
     }
 
     nav h2 {
+        margin: 0px;
         font-size: 35px;
         font-weight: 700;
         color: #131313;
-        padding-left: none;
+        padding-left: 0px;
+        text-align: center;
+        margin-bottom: 10px;
+
     }
 
     nav div {
         width: 380px;
         display: flex;
         justify-content: space-between;
-        /* padding-right: 130px;  */
+        padding-right: 0px;
     }
 
+    .banner-d div img {
+        width: 95%;
+        height: 95%;
+    }
+
+    .banner-d p {
+        width: 90%;
+    }
+
+    /* quick-list section style */
+    .features-section {
+        flex-direction: column;
+        margin-inline: 15px;
+       text-align: center;
+    }
+    .features-section-img {
+        grid-template-columns: 1fr;
 
 }
 
+
 /* style for madiaum device */
-@media screen and (min-width:576px) and (max-width:768px) {}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    /* .banner-d div img{
+        width: 100%;
+        height: 100%;
+    }  */
+}
